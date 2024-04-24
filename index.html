@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/tablogo.png" type="image/x-icon">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <section>
+        <div id="container">
+            <div class="search">
+                <input placeholder="Search a City Name." type="text" id="inputValue">
+                <button type="submit" id="searchBtn">Go</button>
+            </div>
+
+            <div id="firstRow">
+
+                <div>
+                    <ul>
+                        <li>
+                            <h1 id="cityName"></h1>
+                        </li>
+                        <li>
+                            <p id="dateCurrent"></p>
+                        </li>
+                        <li><img src="" id="weatherLogo"></li>
+                        <li>
+                            <h3 id="weatherStatus"></h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <h1 id="centiGrade"></h1>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <table id="mainTbl">
+
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Temperature</td>
+                    <td id="temp"></td>
+                </tr>
+                <tr>
+                    <td>Feels Like</td>
+                    <td id="feels_like"></td>
+                </tr>
+                <tr>
+                    <td>Minimum Temperature</td>
+                    <td id="temp_min"></td>
+                </tr>
+                <tr>
+                    <td>Maximum Temperature</td>
+                    <td id="temp_max"></td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td id="humidity"></td>
+                </tr>
+                <tr>
+                    <td>Sea Level</td>
+                    <td id="sea_level"></td>
+                </tr>
+                <tr>
+                    <td>Ground Level</td>
+                    <td id="grnd_level"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="notifications-container">
+            <div class="success">
+                <div class="flex">
+                    <div class="success-prompt-wrap">
+                        <p class="success-prompt-heading">Discover Your City's Weather</p>
+                        <div class="success-prompt-prompt">
+                            <p>Easily access current weather updates for your location by typing in your city's name in
+                                the search bar above. Stay informed about temperature, humidity, wind conditions, and
+                                more, tailored specifically to your area.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-notifications-container">
+            <div class="success">
+                <div class="flex">
+
+                    <div class="success-prompt-wrap">
+                        <p class="success-prompt-heading">Oops! City Not Found</p>
+                        <div class="success-prompt-prompt">
+                            <p>We couldn't find weather information for the city you entered. Please double-check the
+                                spelling or try another city.</p>
+                        </div>
+                        <div class="success-button-container">
+                            <button type="button" class="success-button-secondary">Dismiss</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
